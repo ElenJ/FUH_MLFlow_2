@@ -10,6 +10,7 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__" or __name__== "trainModelRandomForest":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
+    #check git
 
     # Create a Gaussian Classifier
     from MLFlowRun import n_estimators
@@ -20,6 +21,5 @@ if __name__ == "__main__" or __name__== "trainModelRandomForest":
     trainedRF.fit(X_train_fit, y_train)
     # predict
     y_pred = trainedRF.predict(X_test_fit)
-
     print("DONE with training")
 
