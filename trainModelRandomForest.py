@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 if __name__ == "__main__" or __name__== "trainModelRandomForest":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
-
     # Create a Gaussian Classifier
     from MLFlowRun import n_estimators
     from PreprocessPinguins import X_train_fit, X_test_fit, y_train
